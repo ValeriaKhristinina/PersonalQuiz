@@ -32,6 +32,8 @@ class QuestionsViewController: UIViewController {
     private var currentAnswers: [Answer] {
         questions[questionIndex].answers
     }
+	
+	private let questionValue = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -146,10 +148,12 @@ extension QuestionsViewController {
     }
     
     
-    /*
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+		let resultVC = segue.destination as! ResultsViewController
+		resultVC.resultAnswers = answerChoosen
     }
-    */
+    
 }
+
+
