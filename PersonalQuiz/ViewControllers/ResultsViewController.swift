@@ -14,44 +14,33 @@ class ResultsViewController: UIViewController {
 	
 	// MARK: - Private properties
 	var resultAnswers: [Answer] = []
+	private var animalsCounter: [AnimalsCounter] = []
 	private var catCount = 0
 	private var dogCount = 0
 	private var rabbitCount = 0
 	private var turtleCount = 0
 	
-	struct Result {
-		var type: AnimalType
-		var count: Int
-	}
-	
-	
-	// 2. Определить наиболее часто встречающийся тип животного
-	// 3. Отобразить результаты в соотвствии с этим животным
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		countAnimals()
-		
-		
-		var array: [Result] = [
-			Result(type: .cat, count: catCount),
-			Result(type: .dog, count: dogCount),
-			Result(type: .rabbit, count: rabbitCount),
-			Result(type: .turtle, count: turtleCount)
+		 animalsCounter = [
+			AnimalsCounter(type: .cat, count: catCount),
+			AnimalsCounter(type: .dog, count: dogCount),
+			AnimalsCounter(type: .rabbit, count: rabbitCount),
+			AnimalsCounter(type: .turtle, count: turtleCount)
 		]
 		
-		var maxResult = array.first
-		
-		for animal in array {
+		var maxResult = animalsCounter.first
+		for animal in animalsCounter {
 			if(animal.count > maxResult?.count ?? 0) {
 				maxResult = animal
 			}
-			
 		}
 		
 		titleLabel.text = "Вы - \(maxResult?.type.rawValue ?? "🤷🏼‍♀️")"
 		descriptionLabel.text = maxResult?.type.definition
 	}
+	
 	
 	func countAnimals() {
 		for item in resultAnswers {
@@ -62,11 +51,6 @@ class ResultsViewController: UIViewController {
 			case .turtle: turtleCount += 1
 			}
 		}
-		
-		print("dog", dogCount)
-		print("cat", catCount)
-		print("rabbit", rabbitCount)
-		print("turle", turtleCount)
 	}
 	
 	

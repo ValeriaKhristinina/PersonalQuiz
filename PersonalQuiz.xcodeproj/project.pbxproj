@@ -19,6 +19,7 @@
 		A8D2AEAA23EC98A900216F8D /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D2AEA923EC98A900216F8D /* ResponseType.swift */; };
 		A8D2AEAC23EC98FA00216F8D /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D2AEAB23EC98FA00216F8D /* Answer.swift */; };
 		A8D2AEAE23EC995C00216F8D /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D2AEAD23EC995C00216F8D /* AnimalType.swift */; };
+		E20212B523F491ED000623CF /* AnimalsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20212B423F491ED000623CF /* AnimalsCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A8D2AEA923EC98A900216F8D /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		A8D2AEAB23EC98FA00216F8D /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		A8D2AEAD23EC995C00216F8D /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		E20212B423F491ED000623CF /* AnimalsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				A8D2AEA723EC975400216F8D /* Question.swift */,
 				A8D2AEA923EC98A900216F8D /* ResponseType.swift */,
+				E20212B423F491ED000623CF /* AnimalsCounter.swift */,
 				A8D2AEAB23EC98FA00216F8D /* Answer.swift */,
 				A8D2AEAD23EC995C00216F8D /* AnimalType.swift */,
 			);
@@ -198,6 +201,7 @@
 			files = (
 				A8D2AE9323EC8A9200216F8D /* IntroductionViewController.swift in Sources */,
 				A8D2AEA823EC975400216F8D /* Question.swift in Sources */,
+				E20212B523F491ED000623CF /* AnimalsCounter.swift in Sources */,
 				A8066AA523F3234A00086A81 /* QuestionsViewController.swift in Sources */,
 				A8D2AE8F23EC8A9200216F8D /* AppDelegate.swift in Sources */,
 				A8D2AEAC23EC98FA00216F8D /* Answer.swift in Sources */,
